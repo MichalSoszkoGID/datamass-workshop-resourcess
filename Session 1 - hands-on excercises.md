@@ -76,7 +76,7 @@ In this tutorial, we will only cover on how to operate within VSCode Instance.
 ![Screenshot 2022-04-25 at 23 01 27](https://user-images.githubusercontent.com/77925576/165174292-ed5b1cc0-0516-40ec-89f9-aa6de7de833f.png)
 
 5. Make sure you are in `/home/jupyter` directory and then execute command:
-`dp init https://gitlab.com/datamass-mdp-workshop/mdp-project-template`
+`dp init https://gitlab.com/datamass-mdp-workshop/dp-init.git`
 This will initialize dp-cli tool in the environment. Provide any username when prompted.
 
 >-> Tip: when copy+pasting for the 1st time, you might be asked for permissions to access your clipboard by Chrome. Accept.
