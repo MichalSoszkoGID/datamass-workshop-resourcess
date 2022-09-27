@@ -45,6 +45,8 @@ Your task is to:
      - `first_order_date`: date of the first order for a given customer (ignore order status)
         
      - `most_recent_order_date`: date of the most recent order (ignore order status)
+
+     - `customer_lifespan`: number of years customer continues purchasing products
      
 3. Inspect the pipeline and execute it locally.
 
