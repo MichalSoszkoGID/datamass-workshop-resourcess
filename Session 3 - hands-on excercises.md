@@ -187,7 +187,7 @@ models:
         - facebook_traffic
         - organic_traffic
         - youtube_traffic
-        - clv
+        - customer_total_value
         - order_cnt
         - first_order_date
         - most_recent_order_date
