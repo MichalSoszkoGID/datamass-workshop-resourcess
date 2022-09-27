@@ -85,13 +85,11 @@ This will initialize dp-cli tool in the environment. Provide any username when p
 <img width="993" alt="image" src="https://user-images.githubusercontent.com/54064594/192251169-2e8e479e-020f-4298-be8a-202a5271fcfa.png">
 - come back to notebook and type in: `git clone https://github.com/<address>.git`
 
-6. Run `dp create <<<your_cloned_project/>>> https://gitlab.com/datamass-mdp-workshop/mdp-project-template.git`  This command will create a full data-pipelines-cli environment with dbt project as a core part of it.
-From options choose 'pipeline-project'
+6. Run `dp create <<<your_cloned_project/>>>`  This command will create a full data-pipelines-cli environment with dbt project as a core part of it.
+Please confirm with Enter 'datamass-mdp-workshop'
+<img width="476" alt="image" src="https://user-images.githubusercontent.com/54064594/192602099-891a6edf-449f-4672-b641-0b01fd6429f4.png">
 
-<img height="100" alt="image" src="https://user-images.githubusercontent.com/54064594/191789935-59c8b12b-a2b0-4f64-ab67-fcd5866fa38c.png" >
-
-
-For "gcp_dev_project_id" and "gcp_prod_project_id"  provide the same project id: `datamass-mdp-workshop`. For the rest questions you can answer as follow:
+For "gcp_project_id" provide project id: `datamass-mdp-workshop`. For the rest questions you can answer as follow:
 
 <img width="460" alt="image" src="https://user-images.githubusercontent.com/54064594/191799731-6399b7df-b254-44fb-9ca8-0c2009834b9b.png">
 
