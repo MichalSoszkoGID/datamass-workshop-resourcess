@@ -18,7 +18,9 @@ All models stored in `analyses` forlder will be noticed by, dbt but skipped duri
 
 ## Business task
 
-During the demo session we have created a pipeline ending with `dim_users` model. `Dim_users` is a data mart model, where we store basic information about our customers (with confidential data filtered off) - like his / her `user_id`, `gender`, `age`, `postal code`, `country` etc. This data was taken from the `raw users table` and then enriched with information about his/her web activity in the fictional ecommerce platform (`total events`, date of the `first` and `most recent web activity`, splitted between different traffic sources). Now, our data team has been asked for upgrading the model so it can also present information regarding `customer lifetime value` so the analysts can search for patterns and insights reflecting web activity and purchases made by the customers. Moreover, there has been a request for extending the users localisation data with continents - "a small upgrade but a necessary one". 
+During the demo session we have created a pipeline ending with `dim_users` model. `Dim_users` is a data mart model, where we store basic information about our customers (with confidential data filtered off) - like his / her `user_id`, `gender`, `age`, `postal code`, `country` etc. This data was taken from the `raw users table` and then enriched with information about his/her web activity in the fictional ecommerce platform (`total events`, date of the `first` and `most recent web activity`, splitted between different traffic sources). Now, our data team has been asked for upgrading the model so it can also present information helpful for calculating `customer lifetime value` so the analysts can search for patterns and insights reflecting web activity and purchases made by the customers. You have agreeded with data team that you will add `customer_total_value` (and some other parameters, enlisted below) defined as sum of all customer expenses for complete orders only (this oversimplification is intentional). This should be enough to analysts to proceed. 
+
+Moreover, there has been a request for extending the users localisation data with continents - "a small upgrade but a necessary one". 
 
 ### Steps to perform:
 Your task is to:
@@ -36,7 +38,7 @@ Your task is to:
     
     2b. Add created models to the pipeline. `Dim_users` table should be upgraded with the following columns:
     
-     - `CLV`: a customers lifetime value (here it is a sum of prices for completed orders, filter out orders that are in progress, returned, cancelled or shipped etc.)
+     - `customer_total_value`: here it is a sum of prices for completed orders, you will need to filter out orders that are in progress, returned, cancelled or shipped etc.
      
      - `order_cnt`: count of all completed orders placed by the user
         
@@ -268,7 +270,7 @@ and clicking on the DBT-Docs icon (Notebook Launcher). The DAG should now look l
 ![image](https://user-images.githubusercontent.com/97670480/192155662-9b1b13e1-70f3-4846-8e32-a9a39bf9fa9b.png)
 
 ---
-### Adding `CLV` & `orders` related columns to `dim_users`
+### Adding `customer_total_value` & `orders` related columns to `dim_users`
 
 **Step 1.** Inspect `raw_ecommerce_eu` tables and focus on `order_items`. This table stores information such as `order_id`, `user_id`, `sale_price` etc.. The granularity is 1 product ordered = 1 row. Create source yaml file for the raw data: `source_ecommerce__order_items.yml` and store it in `models/staging/ecommerce` folder:
 
@@ -319,7 +321,7 @@ renamed as (
 select * from renamed
 ```
 ---
-**Step 3.** Create an intermediate model in `models/intermediate/marketing` folder where you perform transformations, calculating the `CLV`, `order_cnt`, `first_order_date` and `most_recent_order_date`, aggregated results by user. Name the model as `int_order_items_sale_pivoted.sql`:
+**Step 3.** Create an intermediate model in `models/intermediate/marketing` folder where you perform transformations, calculating the `customer_total_value`, `order_cnt`, `first_order_date` and `most_recent_order_date`, aggregated results by user. Name the model as `int_order_items_sale_pivoted.sql`:
 
 ```
 {{
@@ -337,7 +339,7 @@ pivot_order_items_agg_by_user as (
     select 
         
         user_id,
-        sum(case when order_item_status = 'Complete' then order_item_sale_price else 0 end)     as CLV,
+        sum(case when order_item_status = 'Complete' then order_item_sale_price else 0 end)     as customer_total_value,
         count(distinct order_id)                                                                as order_cnt,
         min(order_item_created_at)                                                              as first_order_date,
         max(order_item_created_at)                                                              as most_recent_order_date
@@ -388,7 +390,7 @@ users_events_orders_joined as (
         e.facebook_traffic,
         e.organic_traffic,
         e.youtube_traffic,
-        o.CLV,
+        o.customer_total_value,
         o.order_cnt,
         o.first_order_date,
         o.most_recent_order_date
