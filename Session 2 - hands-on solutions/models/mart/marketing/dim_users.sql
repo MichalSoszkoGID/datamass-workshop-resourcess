@@ -34,7 +34,7 @@ users_events_orders_joined as (
         e.facebook_traffic,
         e.organic_traffic,
         e.youtube_traffic,
-        o.CLV,
+        o.customer_total_value,
         o.order_cnt,
         o.first_order_date,
         o.most_recent_order_date

@@ -13,7 +13,7 @@ pivot_order_items_agg_by_user as (
     select 
         
         user_id,
-        sum(case when order_item_status = 'Complete' then order_item_sale_price else 0 end)     as CLV,
+        sum(case when order_item_status = 'Complete' then order_item_sale_price else 0 end)     as customer_total_value,
         count(distinct order_id)                                                                as order_cnt,
         min(order_item_created_at)                                                              as first_order_date,
         max(order_item_created_at)                                                              as most_recent_order_date
