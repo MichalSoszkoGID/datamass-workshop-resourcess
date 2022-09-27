@@ -23,7 +23,11 @@ All dbt resources (models, tests, seeds) created and presented by during the wor
 ### Modern Data Stack components:
 
 Workbench: [Link](https://console.cloud.google.com/vertex-ai/workbench/list/instances?authuser=0&project=datamass-mdp-workshop)
+
 Bigquery: [Link](https://console.cloud.google.com/bigquery?authuser=0&project=datamass-mdp-workshop)
+
 DataHub: [Link](http://34.116.196.16:9002/)
+
 Scheduler: [Link](https://58a6f530618c49558667b865f21ac64a-dot-europe-central2.composer.googleusercontent.com/home)
+
 Gitlab: [Link](https://gitlab.com/datamass-mdp-workshop)
