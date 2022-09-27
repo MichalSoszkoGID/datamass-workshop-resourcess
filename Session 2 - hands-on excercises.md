@@ -1,3 +1,5 @@
+# Session 2
+
 ## GID DataOps CLI: Modifying an end-to-end data pipeline
 
 Welcome to the DataOps CLI Labs workshop repository #2. By the end of this tutorial, you will know how to:

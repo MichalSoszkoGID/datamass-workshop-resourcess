@@ -1,3 +1,5 @@
+# Session 3
+
 ## GID DataOps CLI: CI/CD & Quality Control
 Welcome to the DataOps CLI Labs workshop repository #3. By the end of this tutorial, you will know how to:
 - deploy your code to staging-dev 

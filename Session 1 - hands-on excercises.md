@@ -1,3 +1,5 @@
+# Session 1
+
 ## GID DataOps CLI: Setting up environment and loading data to dwh 
 
 Welcome to the DataOps CLI Labs workshop repository #1. By the end of this tutorial, you will know how to:
