@@ -8,7 +8,7 @@ Welcome to the DataOps CLI Labs workshop repository #1. By the end of this tutor
 - create a simple transformation and execute it using `dp run`
 
 Target environment will be Google Cloud Platform's: BigQuery, Vertex AI Managed Notebook, VSCode as IDE. This tutorial was written with GID DataOps 1.0.9 as a current release. Where `GID DataOps 1.0.9` is jupyterlab image and it is available here:
-gcr.io/getindata-images-public/jupyterlab-dataops@sha256:ab5f141c9b6916cd727817340380953715922df607f94ff9d523732b8c0842e1
+gcr.io/getindata-images-public/jupyterlab-dataops@sha256:ab5f141c9b6916cd727817340380953715922df607f94ff9d523732b8c0842e1. 
 If you're new to data-pipelines-cli check the documentation:
 https://data-pipelines-cli.readthedocs.io/en/latest/index.html
 
