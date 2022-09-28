@@ -85,9 +85,10 @@ Provide username when prompted. We suggest to use your name and surname with no 
 - come back to notebook and type in: 
 `git clone https://gitlab.com/datamass-mdp-workshop/name-username-datamass.git`
 
-5. Run `dp create <<<your_cloned_project/>>>`  This command will create a full data-pipelines-cli environment with dbt project as a core part of it.
+5. Run `dp create name-username-datamass`  This command will create a full data-pipelines-cli environment with dbt project as a core part of it.
 Please confirm with Enter 'datamass-mdp-workshop'
-<img width="497" alt="image" src="https://user-images.githubusercontent.com/54064594/192722120-bd35795b-2f70-4621-80c4-3ee3ecd75116.png">
+![image](https://user-images.githubusercontent.com/54064594/192796708-2dd4fa08-c420-478a-8721-de5d498a582d.png)
+
 
 
 For "gcp_project_id" provide project id: `datamass-mdp-workshop`. For the rest questions you can answer as follow:
