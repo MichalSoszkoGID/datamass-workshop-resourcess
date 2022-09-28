@@ -1,8 +1,8 @@
 # Session 1
-## GID DataOps CLI: Setting up environment and loading data to dwh 
+## Data Pipelines CLI: Setting up environment and loading data to dwh 
 
 Welcome to the DataOps CLI Labs workshop repository #1. By the end of this tutorial, you will know how to:
-- configure and deploy GID DataOps CLI tool as a user-managed notebook in GCP Vertex AI environment
+- configure and deploy Data Pipelines CLI tool as a user-managed notebook in GCP Vertex AI environment
 - move around various DataOps tools in JupyterLab environment
 - load static seed data to the warehouse with the use of `dp seed`
 - create a simple transformation and execute it using `dp run`
@@ -23,7 +23,7 @@ gcr.io/getindata-images-public/jupyterlab-dataops@sha256:ab5f141c9b6916cd7278173
 3. Type in notebook name (preferrably your first and last name) 
    example: `jan-kowalski`
 5. In environment section, choose Debian 10 and "Custom container"
-6. Provide a link to the GID DataOps CLI image: `gcr.io/getindata-images-public/jupyterlab-dataops:bigquery-1.0.9`
+6. Provide a link to the Data Pipelines CLI image: `gcr.io/getindata-images-public/jupyterlab-dataops:bigquery-1.0.9`
 
 
 <img width="539" alt="image" src="https://user-images.githubusercontent.com/54064594/191758015-10e4d023-5fe7-4f9c-8fa2-f6818ae20484.png">
@@ -37,15 +37,15 @@ gcr.io/getindata-images-public/jupyterlab-dataops@sha256:ab5f141c9b6916cd7278173
 
 You can find more information here: https://data-pipelines-cli.readthedocs.io/en/latest/index.html
 
-## Creating new [empty] project in github
+## Creating new [empty] project in gitlab.com
 We need to create new project in github before we create our first dp project.
-1. Go to github: https://github.com/ and login
+1. Go to gitlab: https://gitlab.com/datamass-mdp-workshop
 2. Click on "New repository" to start creating:
+![image](https://user-images.githubusercontent.com/54064594/192777919-3535dae7-d18c-4ff4-83fb-2d8a3f575665.png)
+3. Select "Create blank project" option
+3. Fill in the field "Project name","Project slug" according to the following patterd `name-username-datamass` Additionally check the box with "Initialize repository with a README"
+![image](https://user-images.githubusercontent.com/54064594/192779301-5dea2c29-24b3-43ac-96ee-698afb59db42.png)
 
-<img width="1001" alt="image" src="https://user-images.githubusercontent.com/54064594/192232152-69bf7586-9a3d-437e-b643-2e34b8396849.png">
-
-3. Fill in the field "Repository name" and check the box with "Add a README file"
-<img width="714" alt="image" src="https://user-images.githubusercontent.com/54064594/192764844-6e04f8a0-d0b7-4171-9a4d-ad42434d0643.png">
 Other settings can remain default
 
 ## Inside the notebook with GID DataOps CLI
@@ -73,11 +73,11 @@ This will initialize dp-cli tool in the environment. Provide any username when p
 
 >-> Tip: when copy+pasting for the 1st time, you might be asked for permissions to access your clipboard by Chrome. Accept.
 6. Now you will clone previously created repository.
-- go to github and copy HTTPS code:
-<img width="985" alt="image" src="https://user-images.githubusercontent.com/54064594/192766195-55a0ac70-9bc3-42c8-b79e-34c9be76285b.png">
+- go to gitlab and copy HTTPS code:
+![image](https://user-images.githubusercontent.com/54064594/192780852-4b55c928-8944-4fa8-9304-976d019de4ea.png)
 
 - come back to notebook and type in: 
-`git clone https://github.com/getindata/name-surname-workshop.git`
+`git clone https://gitlab.com/datamass-mdp-workshop/name-username-datamass.git`
 
 6. Run `dp create <<<your_cloned_project/>>>`  This command will create a full data-pipelines-cli environment with dbt project as a core part of it.
 Please confirm with Enter 'datamass-mdp-workshop'
