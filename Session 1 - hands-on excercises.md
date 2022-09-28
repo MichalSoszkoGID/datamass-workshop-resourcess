@@ -86,7 +86,7 @@ Provide username when prompted. We suggest to use your name and surname with no 
 `git clone https://gitlab.com/datamass-mdp-workshop/name-username-datamass.git`
 
 5. Run `dp create name-username-datamass`  This command will create a full data-pipelines-cli environment with dbt project as a core part of it.
-Please confirm with Enter 'datamass-mdp-workshop'
+Please confirm with Enter 'datamass-mdp-workshop'  
 ![image](https://user-images.githubusercontent.com/54064594/192796708-2dd4fa08-c420-478a-8721-de5d498a582d.png)
 
 
