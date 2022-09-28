@@ -16,7 +16,9 @@ pivot_order_items_agg_by_user as (
         sum(case when order_item_status = 'Complete' then order_item_sale_price else 0 end)     as customer_total_value,
         count(distinct order_id)                                                                as order_cnt,
         min(order_item_created_at)                                                              as first_order_date,
-        max(order_item_created_at)                                                              as most_recent_order_date
+        max(order_item_created_at)                                                              as most_recent_order_date,
+        date_diff(max(date(order_item_created_at)), min(date(order_item_created_at)), year)     as customer_lifespan
+
 
     from order_items
     group by user_id
