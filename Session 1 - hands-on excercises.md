@@ -63,11 +63,11 @@ In this tutorial, we will only cover on how to operate within VSCode Instance.
 
 ![Screenshot 2022-04-25 at 22 59 10](https://user-images.githubusercontent.com/77925576/165173963-c2aaa4c9-d68b-4709-8ddf-1e1c63f79fe6.png)
 
-3. Open a new terminal instance.
+2. Open a new terminal instance.
 
 ![Screenshot 2022-04-25 at 23 01 27](https://user-images.githubusercontent.com/77925576/165174292-ed5b1cc0-0516-40ec-89f9-aa6de7de833f.png)
 
-5. Make sure you are in `/home/jupyter` directory and then execute command:  
+3. Make sure you are in `/home/jupyter` directory and then execute command:  
 `dp init https://gitlab.com/datamass-mdp-workshop/dp-init.git`   
 You will be asked here about your username and password to gitlab.
 ![image](https://user-images.githubusercontent.com/54064594/192787487-09ba499f-b0a9-45df-84c3-20dd3383e812.png)  
@@ -78,14 +78,14 @@ Provide username when prompted. We suggest to use your name and surname with no 
 ![image](https://user-images.githubusercontent.com/54064594/192788102-174deb92-cbeb-461e-bc25-c7b80c1d8569.png)
 
 >-> Tip: when copy+pasting for the 1st time, you might be asked for permissions to access your clipboard by Chrome. Accept.
-6. Now you will clone previously created repository.
+4. Now you will clone previously created repository.
 - go to gitlab and copy HTTPS code:
 ![image](https://user-images.githubusercontent.com/54064594/192780852-4b55c928-8944-4fa8-9304-976d019de4ea.png)
 
 - come back to notebook and type in: 
 `git clone https://gitlab.com/datamass-mdp-workshop/name-username-datamass.git`
 
-6. Run `dp create <<<your_cloned_project/>>>`  This command will create a full data-pipelines-cli environment with dbt project as a core part of it.
+5. Run `dp create <<<your_cloned_project/>>>`  This command will create a full data-pipelines-cli environment with dbt project as a core part of it.
 Please confirm with Enter 'datamass-mdp-workshop'
 <img width="497" alt="image" src="https://user-images.githubusercontent.com/54064594/192722120-bd35795b-2f70-4621-80c4-3ee3ecd75116.png">
 
@@ -95,7 +95,7 @@ For "gcp_project_id" provide project id: `datamass-mdp-workshop`. For the rest q
 ![image](https://user-images.githubusercontent.com/54064594/192723188-5f33bd93-13d8-4115-ab22-6cdec9e170d3.png)
 
 
-7. Your environment is now ready to execute some dbt code against BigQuery dwh!
+6. Your environment is now ready to execute some dbt code against BigQuery dwh!
 
 ## Loading data to dwh with dbt seed
 
