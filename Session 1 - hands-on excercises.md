@@ -89,11 +89,15 @@ Provide username when prompted. We suggest to use your name and surname with no 
 Please confirm with Enter 'datamass-mdp-workshop'  
 ![image](https://user-images.githubusercontent.com/54064594/192796708-2dd4fa08-c420-478a-8721-de5d498a582d.png)
 
+Please fill proper field as follow:
+- project name: `name_surname_datamass`  
+- "gcp_project_id": `datamass-mdp-workshop`  
+- dataset: `nsurname` (where "n" is first letter of your name)   
+
+For the rest questions you can answer as follow:
+![image](https://user-images.githubusercontent.com/54064594/192800210-e568fd6e-10af-4013-90b7-0d47729362f0.png)
 
 
-For "gcp_project_id" provide project id: `datamass-mdp-workshop`. For the rest questions you can answer as follow:
-
-![image](https://user-images.githubusercontent.com/54064594/192723188-5f33bd93-13d8-4115-ab22-6cdec9e170d3.png)
 
 
 6. Your environment is now ready to execute some dbt code against BigQuery dwh!
