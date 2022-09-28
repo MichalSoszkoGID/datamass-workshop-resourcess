@@ -73,10 +73,9 @@ You will be asked here about your username and password to gitlab.
 ![image](https://user-images.githubusercontent.com/54064594/192787487-09ba499f-b0a9-45df-84c3-20dd3383e812.png)  
 ![image](https://user-images.githubusercontent.com/54064594/192787564-9bfc3741-e8aa-4297-ba88-09ffe3dcbda7.png)
 
-
-
 This will initialize dp-cli tool in the environment.  
-Provide username when prompted. We suggest to use your name and surname with no spaces between, ex. `jankowalski`
+Provide username when prompted. We suggest to use your name and surname with no spaces between, ex. `jankowalski`  
+![image](https://user-images.githubusercontent.com/54064594/192788102-174deb92-cbeb-461e-bc25-c7b80c1d8569.png)
 
 >-> Tip: when copy+pasting for the 1st time, you might be asked for permissions to access your clipboard by Chrome. Accept.
 6. Now you will clone previously created repository.
