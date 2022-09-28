@@ -84,8 +84,7 @@ This will initialize dp-cli tool in the environment. Provide any username when p
 - go to github and copy HTTPS code:
 <img width="993" alt="image" src="https://user-images.githubusercontent.com/54064594/192251169-2e8e479e-020f-4298-be8a-202a5271fcfa.png">
 - come back to notebook and type in: 
-````git clone https://github.com/<address>.git
-````
+`git clone https://github.com/your_repo_name.git`
 
 6. Run `dp create <<<your_cloned_project/>>>`  This command will create a full data-pipelines-cli environment with dbt project as a core part of it.
 Please confirm with Enter 'datamass-mdp-workshop'
@@ -94,7 +93,8 @@ Please confirm with Enter 'datamass-mdp-workshop'
 
 For "gcp_project_id" provide project id: `datamass-mdp-workshop`. For the rest questions you can answer as follow:
 
-<img width="460" alt="image" src="https://user-images.githubusercontent.com/54064594/191799731-6399b7df-b254-44fb-9ca8-0c2009834b9b.png">
+![image](https://user-images.githubusercontent.com/54064594/192723188-5f33bd93-13d8-4115-ab22-6cdec9e170d3.png)
+
 
 7. Your environment is now ready to execute some dbt code against BigQuery dwh!
 
