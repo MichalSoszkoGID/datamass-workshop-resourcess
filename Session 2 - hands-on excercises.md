@@ -2,19 +2,19 @@
 
 ## GID DataOps CLI: Modifying an end-to-end data pipeline
 
-Welcome to the DataOps CLI Labs workshop repository #2. By the end of this tutorial, you will know how to:
+Welcome to the DataOps CLI Labs workshop hands-on session 2. By the end of this tutorial, you will know how to:
 - store unused models in dbt
 - configure dbt project and introduce layer structure
 - transform custom SQL querries into data pipeline - best practices
 
-Target environment will be Google Cloud Platform's: BigQuery & Data Studio, Vertex AI Managed Notebook, VSCode as IDE. This tutorial was written with GID DataOps 1.0.9 as a current release.
+Target environment will be Google Cloud Platform's: `BigQuery & Data Studio`, `Vertex AI Managed Notebook`, `VSCode` as IDE. This tutorial was written with the use of `GID DataOps 1.0.9` [Jupter Image](https://console.cloud.google.com/gcr/images/getindata-images-public/global/jupyterlab-dataops@sha256:ab5f141c9b6916cd727817340380953715922df607f94ff9d523732b8c0842e1/details) as a current release.
 
 # Excercise
 
-## Storing unused resources
+## Storing temporary resources
 
 Task: move (cut & paste) all models and singular tests (if present) created during Session 1 excercises to `analyses` folder. 
-All models stored in `analyses` forlder will be noticed by, dbt but skipped during the pipeline execution. **Be warned:** if your other models still have references to the deprecated models, the dbt pipeline will probably fail. Alternatively - you can delete unwanted models from your project or remove their extensions. Without having the ".sql" / ".yml" extention, the file will be ignored by dbt.
+All models stored in `analyses` forlder will be noticed dbt but skipped during the pipeline execution. **Note:** if your other models still have references to the deprecated models, the dbt pipeline will probably fail. Alternatively - you can delete unwanted models from your project or remove their extensions. Without having the ".sql" / ".yml" extention, the file will be ignored by dbt.
 
 ## Business task
 
@@ -26,17 +26,17 @@ Moreover, there has been a request for extending the users localisation data wit
 Your task is to:
 1. Inspect a csv file: [ISO_like_Countries-Continents.csv](https://gitlab.com/datamass-mdp-workshop/workshop-resources/-/blob/main/CSVs/ISO_like_Countries-Continents.csv) as a potential mapping table for countries and continents. Be warned! Some country names will require you attention!
 
-    1a. Include the csv in the pipeline.
+    a. Include the csv in the pipeline.
     
-    1b. Create corresponding dbt resources (models). At this stage adding the `.yml` configs is optional.
+    b. Create corresponding dbt resources (models). At this stage adding the `.yml` configs is optional.
 
-    1c. Include the information about user continent as a column `user_address_continent` in the `dim_users` table.
+    c. Include the information about user continent as a column `user_address_continent` in the `dim_users` table.
 
 2. Locate in the DWH a table storing information about user orders. This table should allow you to extract information on order prices.
 
-    2a. Create dbt resources (models). At this stage adding the `.yml` configs is optional.
+    a. Create dbt resources (models). At this stage adding the `.yml` configs is optional.
     
-    2b. Add created models to the pipeline. `Dim_users` table should be upgraded with the following columns:
+    b. Add created models to the pipeline. `Dim_users` table should be upgraded with the following columns:
     
      - `customer_total_value`: here it is a sum of prices for completed orders, you will need to filter out orders that are in progress, returned, cancelled or shipped etc.
      
@@ -263,7 +263,7 @@ users_and_events as (
 select * from users_and_events
 ```
 ---
-**Step 6.** Inspect the DAG (lineage graph) using dbt docs function (we use a `DP` command here):
+**Step 6.** Inspect the DAG (lineage graph) using dbt docs function (we use a `dp` command here):
 ```
 dp docs-serve
 ```
@@ -407,7 +407,7 @@ users_events_orders_joined as (
 select * from users_events_orders_joined
 ```
 ---
-**Step 5.** Inspect the DAG (lineage graph) using dbt docs function (we use a `DP` command here):
+**Step 5.** Inspect the DAG (lineage graph) using dbt docs function (we use a `dp` command here):
 ```
 dp docs-serve
 ```

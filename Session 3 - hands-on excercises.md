@@ -1,14 +1,16 @@
 # Session 3
 
 ## GID DataOps CLI: CI/CD & Quality Control
-Welcome to the DataOps CLI Labs workshop repository #3. By the end of this tutorial, you will know how to:
+Welcome to the DataOps CLI Labs workshop hands-on session 3. By the end of this tutorial, you will know how to:
 - deploy your code to staging-dev 
 - apply dbt tests to your project
 - monitor the pipeline's execution with Airflow
 
-Target environment will be Google Cloud Platform's: BigQuery & Data Studio, Vertex AI Managed Notebook, VSCode as IDE. This tutorial was written with GID DataOps 1.0.9 as a current release.
+Target environment will be Google Cloud Platform's: `BigQuery & Data Studio`, `Vertex AI Managed Notebook`, `VSCode` as IDE. This tutorial was written with the use of `GID DataOps 1.0.9` [Jupter Image](https://console.cloud.google.com/gcr/images/getindata-images-public/global/jupyterlab-dataops@sha256:ab5f141c9b6916cd727817340380953715922df607f94ff9d523732b8c0842e1/details) as a current release.
 
 # Excercise
+
+**Note**: if you didn't manage to complete the previous exercise, copy the folder from <<here>> to catch up!
 
 ## Commit your project to the remote repository
 
@@ -74,7 +76,7 @@ Having the CI/CD succesfully completed means the DAG has been created without fa
 
 >-> Hint: It can take few minutes between succesfull CI/CD fun and Airflow DAG import. Do not worry, it is going to be there in not time!
 
-In DAGs folder click on your project and manualy trigger the run (the DAG schedule time has been set up during project initialization, the default value for most project is `0 12 * * *`)
+In DAGs folder click on your project and manualy trigger the run (the DAG schedule time has been set up during project initialization, the default value for most project is `0 12 * * *`). You can check more details on `cron notation` here: (https://crontab.guru/)
 
 <img src="https://user-images.githubusercontent.com/97670480/192253627-b3be7169-44c1-43d0-bff1-a0c93f90f6c4.png"  width="60%" height="60%">
 
@@ -103,13 +105,18 @@ Your task is to add:
 After you've implemented the tests on your local dbt instance you will need to deploy your code to the remote repository and trigger the CI/CD + Airflow pipelines. 
 We encourage you to try this task on your own. However, if you'd like to follow our solution example, please continue to the next chapter!
 
+
+## Finish!
+
+Congrats! You have deployed and tested your pipelie. If tere is some time left we encourage you to take a bonus exercise. 
+
 ### Bonus Excercise ###
 
 If your pipeline finishes run on staging-dev with "all green" try and play around with tests, making them to fail badly! For that you can brak your models, modify tests logic (esp. for singular tests), narrow test boundary conditions etc, but please, do not modify the raw tables! Don't forget to publish your buggy code and run it on airflow.
 
 ## Solutions
 
-In this chapter we'd like to provide couple of examples on how to implement tests descrubed in the exercise. Note that we will use here the models created during Session 2 Excercises. If you need to catch-up please refer to [the following repository](https://gitlab.com/datamass-mdp-workshop/msoszko-datamass-project/-/tree/Session-2-updated-hands-on-results). This repository stores the complete dbt project example created so far during Session 2 demonstration and hands-on excercises, feel free to copy-paste models into your local instance of dbt if you need.
+In this chapter we'd like to provide couple of examples on how to implement tests described in the exercise. Note that we will use here the models created during Session 2 Excercises. If you need to catch-up please refer to [the following repository](https://gitlab.com/datamass-mdp-workshop/msoszko-datamass-project/-/tree/Session-2-updated-hands-on-results). This repository stores the complete dbt project example created so far during Session 2 demonstration and hands-on excercises, feel free to copy-paste models into your local instance of dbt if you need.
 
 ### Core generic test.
 
@@ -216,3 +223,4 @@ select * from customers_who_purchased_items
 except distinct
 select * from customers_who_created_user_account
 ```
+
