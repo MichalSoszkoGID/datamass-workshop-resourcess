@@ -41,14 +41,12 @@ You can find more information here: https://data-pipelines-cli.readthedocs.io/en
 We need to create new project in github before we create our first dp project.
 1. Go to github: https://github.com/ and login
 2. Click on "New repository" to start creating:
+
 <img width="1001" alt="image" src="https://user-images.githubusercontent.com/54064594/192232152-69bf7586-9a3d-437e-b643-2e34b8396849.png">
+
 3. Fill in the field "Repository name" and check the box with "Add a README file"
-<img width="640" alt="image" src="https://user-images.githubusercontent.com/54064594/192244840-81d44177-6746-412b-a9ec-aa5e85db742f.png">
-<img width="461" alt="image" src="https://user-images.githubusercontent.com/54064594/192245076-4d5ecf53-44eb-4abd-ba07-a1966b07b0f9.png">
-
+<img width="714" alt="image" src="https://user-images.githubusercontent.com/54064594/192764844-6e04f8a0-d0b7-4171-9a4d-ad42434d0643.png">
 Other settings can remain default
-
-
 
 ## Inside the notebook with GID DataOps CLI
 You are now inside managed Vertex AI Workbench instance, which will serve as our data pipelines development workflow. This image lets you open:
@@ -76,7 +74,7 @@ This will initialize dp-cli tool in the environment. Provide any username when p
 >-> Tip: when copy+pasting for the 1st time, you might be asked for permissions to access your clipboard by Chrome. Accept.
 6. Now you will clone previously created repository.
 - go to github and copy HTTPS code:
-![image](https://user-images.githubusercontent.com/54064594/192724275-b69057c1-f512-4207-9560-4f9807f3b9f5.png)
+<img width="985" alt="image" src="https://user-images.githubusercontent.com/54064594/192766195-55a0ac70-9bc3-42c8-b79e-34c9be76285b.png">
 
 - come back to notebook and type in: 
 `git clone https://github.com/your_repo_name.git`
