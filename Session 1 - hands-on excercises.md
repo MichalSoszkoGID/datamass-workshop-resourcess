@@ -94,7 +94,7 @@ Please fill proper field as follow:
 - "gcp_project_id": `datamass-mdp-workshop`  
 - dataset: `nsurname` (where "n" is first letter of your name)   
 
-For the rest questions you can answer as follow:
+For the rest questions you can answer as follow:  
 ![image](https://user-images.githubusercontent.com/54064594/192800210-e568fd6e-10af-4013-90b7-0d47729362f0.png)
 
 
