@@ -54,7 +54,7 @@ Your task is to:
    
 The task given above, although simplified, represents a real-world scenario for analytics engineer everyday work. That includes familiarizing ourself with the business logic, raw data structure, dbt project shape and internal rules regarding building models for the pipeline we are going to work with. We encourage you to try the excercise on your own but example of how the updated pipeline could look alike (with more detailed instruction how to get there) is provided underneath.
 
-In case you need to catch up with the dbt project we created during demo session - You can find it in this repository: [dbt project - Session 2](https://gitlab.com/datamass-mdp-workshop/msoszko-datamass-project/-/tree/session-2-updated)
+In case you need to catch up with the dbt project we created during demo session - You can find it in this repository: [dbt project - Session 2](https://github.com/MichalSoszkoGID/datamass-workshop-resourcess/tree/main/Session%202)
 
 >-> Tip: Before you start you can delete / comment / move to `analyses` all models you've been working with and copy paste the models folder from the sample repository. 
  
@@ -69,7 +69,7 @@ Note: The solution proposed here does not stand as an one-and-only true way for 
 >-> Hint2: Or if you don't want to run the whole pipeline but the model you have just created - `dbt run --select name_of_model`
 
 ---
-**Step 1.** Locate csv file: [ISO_like_Countries-Continents.csv](https://gitlab.com/datamass-mdp-workshop/workshop-resources/-/blob/main/CSVs/ISO_like_Countries-Continents.csv) and upload it to `seeds` folder inside of you dbt project.
+**Step 1.** Locate csv file: [ISO_like_Countries-Continents.csv](https://github.com/MichalSoszkoGID/datamass-workshop-resourcess/blob/main/CSV/ISO_like_Countries-Continents.csv) and upload it to `seeds` folder inside of you dbt project.
 
 >-> Hint: you can download the file into your local drive and then drag-drop it into VSCode
 
