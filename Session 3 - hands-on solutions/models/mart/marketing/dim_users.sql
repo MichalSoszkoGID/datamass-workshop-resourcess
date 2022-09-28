@@ -37,7 +37,8 @@ users_events_orders_joined as (
         o.customer_total_value,
         o.order_cnt,
         o.first_order_date,
-        o.most_recent_order_date
+        o.most_recent_order_date,
+        o.customer_lifespan
 
     from users as u
     left join events as e

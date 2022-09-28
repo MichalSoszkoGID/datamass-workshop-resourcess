@@ -26,6 +26,7 @@ models:
         - order_cnt
         - first_order_date
         - most_recent_order_date
+        - customer_lifespan
     
     columns:
       - name: user_id
@@ -86,4 +87,7 @@ models:
         description: ""
 
       - name: most_recent_order_date
+        description: ""
+
+      - name: customer_lifespan
         description: ""
