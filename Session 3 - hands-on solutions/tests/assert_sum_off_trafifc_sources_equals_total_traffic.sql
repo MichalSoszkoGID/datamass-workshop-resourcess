@@ -1,6 +1,10 @@
+with users as (
+  select * from {{ ref('dim_users') }}
+)
+
 select 
   *
-from {{ ref('dim_users') }}
+from users
 where
   adwords_traffic + 
   email_traffic + 
