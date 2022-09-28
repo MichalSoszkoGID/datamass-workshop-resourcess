@@ -83,11 +83,14 @@ This will initialize dp-cli tool in the environment. Provide any username when p
 6. Now you will clone previously created repository.
 - go to github and copy HTTPS code:
 <img width="993" alt="image" src="https://user-images.githubusercontent.com/54064594/192251169-2e8e479e-020f-4298-be8a-202a5271fcfa.png">
-- come back to notebook and type in: `git clone https://github.com/<address>.git`
+- come back to notebook and type in: 
+````git clone https://github.com/<address>.git
+````
 
 6. Run `dp create <<<your_cloned_project/>>>`  This command will create a full data-pipelines-cli environment with dbt project as a core part of it.
 Please confirm with Enter 'datamass-mdp-workshop'
-<img width="476" alt="image" src="https://user-images.githubusercontent.com/54064594/192602099-891a6edf-449f-4672-b641-0b01fd6429f4.png">
+<img width="497" alt="image" src="https://user-images.githubusercontent.com/54064594/192722120-bd35795b-2f70-4621-80c4-3ee3ecd75116.png">
+
 
 For "gcp_project_id" provide project id: `datamass-mdp-workshop`. For the rest questions you can answer as follow:
 
