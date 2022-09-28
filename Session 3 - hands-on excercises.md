@@ -10,7 +10,7 @@ Target environment will be Google Cloud Platform's: `BigQuery & Data Studio`, `V
 
 # Excercise
 
-**Note**: if you didn't manage to complete the previous exercise, copy the folder from <<here>> to catch up!
+**Note**: if you didn't manage to complete the previous exercise, copy the folders from [Session - 2 hands-on excercises](https://github.com/MichalSoszkoGID/datamass-workshop-resourcess/tree/main/Session%202%20-%20hands-on%20solutions) to catch up!
 
 ## Commit your project to the remote repository
 
@@ -116,7 +116,7 @@ If your pipeline finishes run on staging-dev with "all green" try and play aroun
 
 ## Solutions
 
-In this chapter we'd like to provide couple of examples on how to implement tests described in the exercise. Note that we will use here the models created during Session 2 Excercises. If you need to catch-up please refer to [the following repository](https://gitlab.com/datamass-mdp-workshop/msoszko-datamass-project/-/tree/Session-2-updated-hands-on-results). This repository stores the complete dbt project example created so far during Session 2 demonstration and hands-on excercises, feel free to copy-paste models into your local instance of dbt if you need.
+In this chapter we'd like to provide couple of examples on how to implement tests described in the exercise. Note that we will use here the models created during Session 2 Excercises. If you need to catch-up please refer to [Session - 2 hands-on excercises](https://github.com/MichalSoszkoGID/datamass-workshop-resourcess/tree/main/Session%202%20-%20hands-on%20solutions). This repository stores dbt resources created so far during Session 2 demonstration and hands-on excercises, feel free to copy-paste models into your local instance of dbt if you need.
 
 ### Core generic test.
 
