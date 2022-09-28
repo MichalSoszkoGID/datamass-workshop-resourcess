@@ -82,7 +82,8 @@ This will initialize dp-cli tool in the environment. Provide any username when p
 >-> Tip: when copy+pasting for the 1st time, you might be asked for permissions to access your clipboard by Chrome. Accept.
 6. Now you will clone previously created repository.
 - go to github and copy HTTPS code:
-<img width="993" alt="image" src="https://user-images.githubusercontent.com/54064594/192251169-2e8e479e-020f-4298-be8a-202a5271fcfa.png">
+![image](https://user-images.githubusercontent.com/54064594/192724275-b69057c1-f512-4207-9560-4f9807f3b9f5.png)
+
 - come back to notebook and type in: 
 `git clone https://github.com/your_repo_name.git`
 
