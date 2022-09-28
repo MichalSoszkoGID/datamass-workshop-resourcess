@@ -69,7 +69,12 @@ In this tutorial, we will only cover on how to operate within VSCode Instance.
 
 5. Make sure you are in `/home/jupyter` directory and then execute command:  
 `dp init https://gitlab.com/datamass-mdp-workshop/dp-init.git`   
-You will be asked here about your username and login to gitlab.
+You will be asked here about your username and password to gitlab.
+![image](https://user-images.githubusercontent.com/54064594/192787487-09ba499f-b0a9-45df-84c3-20dd3383e812.png)  
+![image](https://user-images.githubusercontent.com/54064594/192787564-9bfc3741-e8aa-4297-ba88-09ffe3dcbda7.png)
+
+
+
 This will initialize dp-cli tool in the environment.  
 Provide username when prompted. We suggest to use your name and surname with no spaces between, ex. `jankowalski`
 
