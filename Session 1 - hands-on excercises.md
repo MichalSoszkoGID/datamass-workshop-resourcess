@@ -8,8 +8,9 @@ Welcome to the DataOps CLI Labs workshop repository #1. By the end of this tutor
 - create a simple transformation and execute it using `dp run`
 
 Target environment will be Google Cloud Platform's: BigQuery, Vertex AI Managed Notebook, VSCode as IDE. This tutorial was written with GID DataOps 1.0.9 as a current release. Where `GID DataOps 1.0.9` is jupyterlab image and it is available here:
-
 gcr.io/getindata-images-public/jupyterlab-dataops@sha256:ab5f141c9b6916cd727817340380953715922df607f94ff9d523732b8c0842e1
+If you're new to data-pipelines-cli check the documentation:
+https://data-pipelines-cli.readthedocs.io/en/latest/index.html
 
 
 # Exercise
@@ -30,12 +31,10 @@ gcr.io/getindata-images-public/jupyterlab-dataops@sha256:ab5f141c9b6916cd7278173
 
 <!-- <img src="https://user-images.githubusercontent.com/77925576/188915356-19d91e45-4115-40fc-bbd8-a2857993dddc.png" height="500" width="600"> -->
 
-6. In machine configuration section, choose n1-standard-1 machine 1vCPU/3.75GB RAM (~0.044 USD / hour) #TODO
+6. In machine configuration section, choose n1-standard-1 machine 1vCPU/3.75GB RAM (~0.044 USD / hour)
 7. Leave everything else on default. 
 8. Click on "Create Jupyter notebook" (please be patient here - this proces take a few minutes )
 9. Wait until it spins up correctly and click on "Open Jupyterlab"
-
-You can find more information here: https://data-pipelines-cli.readthedocs.io/en/latest/index.html
 
 ## Creating new [empty] project in gitlab.com
 We need to create new project in github before we create our first dp project.
