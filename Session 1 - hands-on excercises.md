@@ -150,6 +150,8 @@ age_range,daily_mobile_usage,daily_pc_usage
 45-54,2.22,3.23
 55-64,1.42,3.11
 ````
+![image](https://user-images.githubusercontent.com/54064594/192804817-effae2df-c55b-4586-846b-fb7c6165b691.png)
+
 5. Execute `dp seed`
 6. You should now have a daily_internet_usage table inside your personal working schema
 https://console.cloud.google.com/bigquery?project=datamass-mdp-workshop&supportedpurview=project&ws=!1m0
